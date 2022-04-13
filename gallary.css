@@ -1,0 +1,77 @@
+h1{
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: fantasy;
+  font-size: xxx-large;
+}
+body{
+background-color: black;
+}
+card {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.panel {
+  position: relative;
+  height: 80vh;
+  flex: 0.5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 700ms ease-in;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel h3 {
+  font-size: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 300ms ease-in 400ms;
+}
+
+#panel-1 {
+  background-image: url("https://i.pinimg.com/originals/bb/8a/bf/bb8abf1a043b398b3501c00f1a54427e.jpg");
+}
+
+#panel-2 {
+  background-image: url("https://i.pinimg.com/originals/88/69/b4/8869b417f48921b128b9ea92d4f23ad8.png");
+}
+
+#panel-3 {
+  background-image: url("https://i.pinimg.com/474x/8d/83/69/8d8369514ff51872ab0205763a30326b.jpg");
+}
+
+#panel-4 {
+  background-image: url("https://wallpaperaccess.com/full/858243.jpg");
+}
+
+#panel-5 {
+  background-image: url("https://www.hdwallpapersfreedownload.com/uploads/large/super-heroes/hulk-costume-marvel.jpg");
+}
